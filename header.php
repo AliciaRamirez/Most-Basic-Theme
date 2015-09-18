@@ -14,7 +14,10 @@
 </head>
 
 <body <?php body_class()?>>
-    <img src="<?php echo get_template_directory_uri()."/images/placeholder.gif" ?>" alt="My logo">
+    <?php bloginfo("name");?>
+    <a href="<?php echo home_url(); ?>">
+       <img src="<?php echo get_template_directory_uri()."/images/placeholder.gif " ?>" alt="￼￼￼<?php bloginfo(" name "); ?>">
+    </a>
         <nav class="main-navigation">
             <?php wp_nav_menu(array('theme_location' => 'primary')); ?>
         </nav>
