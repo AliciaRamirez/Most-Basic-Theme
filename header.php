@@ -8,7 +8,6 @@
     <title>
         <?php wp_title(" | ", TRUE, "right"); ?>
     </title>
-
     <?php wp_head(); ?>
 
 </head>

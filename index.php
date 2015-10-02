@@ -1,7 +1,11 @@
 <?php get_header(); ?>
     <div class="grid grid-pad">
         <div class="col-8-12">
-
+           
+            <?php if (is_category()):?>
+            <h1>Browsing Category: <?php single_cat_title() ?></h1>
+            <?php endif; ?>
+            
             <?php if (have_posts()): while (have_posts()): the_post(); ?>
             <?php // Start of the loop ?>
 
